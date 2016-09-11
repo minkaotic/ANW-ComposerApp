@@ -1,4 +1,5 @@
-﻿using Coypu;
+﻿using System.Linq;
+using Coypu;
 using Coypu.NUnit.Matchers;
 using NUnit.Framework;
 
@@ -29,6 +30,7 @@ namespace ANW.ComposerApp_Tests
         public void Shows_Audionetwork_header()
         {
             _browser.Visit("/");
+
             Assert.That(_browser, Shows.Content("Audionetwork"));
         }
 
@@ -42,6 +44,14 @@ namespace ANW.ComposerApp_Tests
                 var composerName = composer.FirstName + " " + composer.LastName;
                 Assert.That(_browser, Shows.Content(composerName));
             }
+        }
+
+        [Test]
+        public void Shows_the_total_number_of_composers_returned()
+        {
+            _browser.Visit("/");
+
+            Assert.That(_browser, Shows.Content("We presently work with " + ComposerRepo.Composers.Count() + " composers"));
         }
     }
 }
