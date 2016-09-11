@@ -51,7 +51,18 @@ namespace ANW.ComposerApp_Tests
         {
             _browser.Visit("/");
 
-            Assert.That(_browser, Shows.Content("We presently work with " + ComposerRepo.Composers.Count() + " composers"));
+            Assert.That(_browser, Shows.Content(
+                "We presently work with " + ComposerRepo.Composers.Count() + " composers"));
+        }
+
+        [Test]
+        public void Allows_navigation_to_composer_details_page()
+        {
+            var testComposer = ComposerRepo.Composers.First();
+            _browser.Visit("/");
+            _browser.ClickLink(testComposer.FirstName + " " + testComposer.LastName);
+
+            Assert.That(_browser, Shows.Content(testComposer.Awards));
         }
     }
 }

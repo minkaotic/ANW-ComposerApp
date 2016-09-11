@@ -11,7 +11,7 @@
     <p>Explore our range of composers:</p>
     <ul>
         @foreach (var x in ViewBag.Composers)
-        {<li>@x.FirstName @x.LastName</li>}
+        {<li><a href="/Home/Composer/@x.Id/">@x.FirstName @x.LastName</a></li>}
     </ul>
     <p>We presently work with @ViewBag.Composers.Count composers.</p>
 </div>
