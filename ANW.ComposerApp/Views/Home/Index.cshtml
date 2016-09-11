@@ -6,3 +6,11 @@
     <h1>Audionetwork</h1>
     <p class="lead">Find music to be passionate about</p>
 </div>
+<div class="composers">
+    <h3>Not sure where to start?</h3>
+    <p>Explore our range of composers:</p>
+    <ul>
+        @foreach (var x in ViewBag.Composers)
+        {<li>@x.FirstName @x.LastName</li>}
+    </ul>
+</div>

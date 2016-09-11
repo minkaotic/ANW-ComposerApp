@@ -26,10 +26,22 @@ namespace ANW.ComposerApp_Tests
         }
 
         [Test]
-        public void Contains_Audionetwork_header()
+        public void Shows_Audionetwork_header()
         {
             _browser.Visit("/");
             Assert.That(_browser, Shows.Content("Audionetwork"));
+        }
+
+        [Test]
+        public void Shows_a_list_of_all_composers_and_their_full_name()
+        {
+            _browser.Visit("/");
+
+            foreach (var composer in ComposerRepo.Composers)
+            {
+                var composerName = composer.FirstName + " " + composer.LastName;
+                Assert.That(_browser, Shows.Content(composerName));
+            }
         }
     }
 }
