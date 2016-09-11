@@ -18,5 +18,15 @@ namespace ANW.ComposerApp.Controllers
 
             return View();
         }
+
+        public ActionResult Composer(int id)
+        {
+            var composer = ComposerRepo.Composers.FirstOrDefault(x => x.Id == id);
+            ViewBag.ComposerTitle = composer.Title;
+            ViewBag.ComposerName = composer.FirstName + " " + composer.LastName;
+            ViewBag.ComposerAwards = composer.Awards;
+
+            return View();
+        }
     }
 }

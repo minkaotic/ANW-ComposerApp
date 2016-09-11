@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composer_page.cs" />
     <Compile Include="Index_page.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

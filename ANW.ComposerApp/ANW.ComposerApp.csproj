@@ -169,6 +169,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Home\Composer.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
