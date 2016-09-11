@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANW.ComposerApp", "ANW.ComposerApp\ANW.ComposerApp.csproj", "{267D8A05-C0A1-439A-AF67-2074D8BAB49E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANW.ComposerApp_Tests", "ANW.ComposerApp_Tests\ANW.ComposerApp_Tests.csproj", "{009A328E-D811-4530-ACFD-1BF16C262715}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{267D8A05-C0A1-439A-AF67-2074D8BAB49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{267D8A05-C0A1-439A-AF67-2074D8BAB49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{267D8A05-C0A1-439A-AF67-2074D8BAB49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009A328E-D811-4530-ACFD-1BF16C262715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009A328E-D811-4530-ACFD-1BF16C262715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009A328E-D811-4530-ACFD-1BF16C262715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009A328E-D811-4530-ACFD-1BF16C262715}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
