@@ -7,51 +7,51 @@ public static class ComposerRepo
     {
         new Composer
         {
-			Id = 1,
+            Id = 1,
             FirstName = "Terry",
-			LastName = "Devine King",
-			Title = "Mr",
-			Awards = "Grammy 2006"
+            LastName = "Devine King",
+            Title = "Mr",
+            Awards = "Grammy 2006"
         },
-		new Composer
+        new Composer
         {
-			Id = 2,
+            Id = 2,
             FirstName = "Tim",
-			LastName = "Garland",
-			Title = "Mr",
-			Awards = "MTV Best New Artist 2001"
+            LastName = "Garland",
+            Title = "Mr",
+            Awards = "MTV Best New Artist 2001"
         },
-		new Composer
+        new Composer
         {
-			Id = 3,
+            Id = 3,
             FirstName = "David",
-			LastName = "Tobin",
-			Title = "Mr",
-			Awards = "Teen Choice Awards Best song 2010"
+            LastName = "Tobin",
+            Title = "Mr",
+            Awards = "Teen Choice Awards Best song 2010"
         },
-		new Composer
+        new Composer
         {
-			Id = 4,
+            Id = 4,
             FirstName = "Max",
-			LastName = "Bradley",
-			Title = "Mr",
-			Awards = "Brit Awards Best composition 2011"
+            LastName = "Bradley",
+            Title = "Mr",
+            Awards = "Brit Awards Best composition 2011"
         },
-		new Composer
+        new Composer
         {
-			Id = 5,
+            Id = 5,
             FirstName = "Hannah",
-			LastName = "Jones",
-			Title = "Ms",
-			Awards = "Brit Awards Best act 2007"
+            LastName = "Jones",
+            Title = "Ms",
+            Awards = "Brit Awards Best act 2007"
         },
-		new Composer
+        new Composer
         {
-			Id = 6,
+            Id = 6,
             FirstName = "Evelyn",
-			LastName = "Glennie",
-			Title = "Mrs",
-			Awards = "Brit Awards Best Percussion album 2013"
+            LastName = "Glennie",
+            Title = "Mrs",
+            Awards = "Brit Awards Best Percussion album 2013"
         }
     };
 }
