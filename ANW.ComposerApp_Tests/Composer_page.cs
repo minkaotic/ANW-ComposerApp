@@ -5,7 +5,8 @@ using NUnit.Framework;
 
 namespace ANW.ComposerApp_Tests
 {
-    class Composer_page
+    [TestFixture]
+    public class Composer_page
     {
         private BrowserSession _browser;
 
